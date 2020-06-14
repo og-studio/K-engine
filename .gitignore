@@ -1,2 +1,12 @@
+#Folders
 cmake-build-*/
 .idea/
+build/
+
+CMakeFiles/
+
+#Files
+cmake_*
+Kengine
+CMakeCache.*
+Makefile
