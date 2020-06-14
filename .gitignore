@@ -1,7 +1,12 @@
+#Folders
 cmake-build-*/
 .idea/
+build/
 
-CMakeCache.txt
 CMakeFiles/
+
+#Files
+cmake_*
+Kengine
+CMakeCache.*
 Makefile
-cmake_install.cmake
