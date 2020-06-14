@@ -11,9 +11,9 @@ set(Kengine_VERSION_PATCH 1)
 
 
 
-add_executable(Kengine main.cpp Engine/Engine.cpp Engine/Engine.h)
+add_executable(Kengine src/main.cpp src/Engine/Engine.cpp src/Engine/Engine.h)
 
 
 
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY .)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin/)
