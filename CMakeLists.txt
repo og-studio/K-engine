@@ -9,9 +9,20 @@ set(Kengine_VERSION_MAJOR 0)
 set(Kengine_VERSION_MINOR 0)
 set(Kengine_VERSION_PATCH 1)
 
+#|--------
+#|Library|
+#|-------/
+#add_library(
 
 
-add_executable(Kengine src/main.cpp src/Engine/Engine.cpp src/Engine/Engine.h)
+
+#|--------
+#|Folders|
+#|-------/
+
+
+
+add_executable(Kengine src/main.cpp src/Engine/Engine.cpp, src/Engine/Engine.h)
 
 
 
