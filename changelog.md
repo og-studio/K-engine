@@ -17,3 +17,5 @@ It's time to track some updates on this.
     +Changed CMakeLists to include more files 
     +ErrorHandler will now print errors
 
+### Removed 
+    -Removed old ErrorHandler
