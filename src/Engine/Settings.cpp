@@ -1,22 +1,52 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
+#include "Settings.h"
 
-#include "ErrorHandler.h"
+
+
 
 namespace ENGINE
 {
+    
 
-    void parseSettings(std::string SettingsFilePath)
+
+    Settings::Settings(string SettingsFilePath)
     {
-        std::fstream fs;
-         
-        fs.open(SettingsFilePath);
-        if(fs.bad())
-        {
-            ENGINE::ErrorHandler::returnError(0);
-        }
-       
+        parseSettings(SettingsFilePath);
     }
+
+    Settings::Settings()
+    {
+
+    }
+
+    Settings::~Settings()
+    {
+
+    }
+
+    void Settings::parseSettings(string settingsFile)
+    {
+        try
+        {
+            ifs.open("settings.cfg");
+            if (ifs.is_open())
+            {
+                throw ENGINE::ErrorResult(FILE_NOT_FOUND_CORRUPT,"settings.cfg");
+            }
+            if(ifs.bad() || !ifs.is_open())
+            {
+                err = FILE_NOT_FOUND_CORRUPT;
+                throw ENGINE::ErrorResult(FILE_NOT_FOUND_CORRUPT,"settings.cfg");
+                
+            }
+
+            
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << '\n';
+        }
+        
+    }
+
 }
+
