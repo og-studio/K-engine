@@ -1,7 +1,9 @@
 #Folders
-cmake-build-*/
 .idea/
+.vscode/
+cmake-build-*/
 build/
+
 
 CMakeFiles/
 
