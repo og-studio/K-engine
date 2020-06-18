@@ -6,6 +6,7 @@
 
 namespace ENGINE {
 
+    ENGINE::Settings s;
 
     void Start();
 
