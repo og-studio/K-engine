@@ -8,6 +8,6 @@
 namespace ENGINE
 {
 
-    std::string ErrorResult(ERRORDEF err, std::string additionalInfo);  
+    std::string ErrorResult(ERRORDEF err, const std::string additionalInfo);  
 
 }
