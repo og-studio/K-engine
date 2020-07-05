@@ -1,13 +1,11 @@
 #pragma once
 
-#include <iostream>
+namespace ENGINE 
+{
+    //Variables
 
-#include "Settings.h"
-
-namespace ENGINE {
-
-    ENGINE::Settings s;
-
+    
+    //Functions
     void Start();
 
 }
