@@ -3,20 +3,20 @@
 namespace ENGINE
 {
 
-    std::string ErrorResult(ERRORDEF err, const std::string additionalInfo)
+    std::string ErrorResult(ERRORDEF err_t, const std::string additionalInfo_t)
     {
-        switch (err)
+        switch (err_t)
         {
 
         case FILE_NOT_FOUND_CORRUPT:
             
-            return "Error: " + additionalInfo + " is corrupted or missing!";
+            return "Error: " + additionalInfo_t + " is corrupted or missing!";
 
             break;
         
         case FILE_PERMISSION_ERROR:
 
-            return "Error: You don't have permission to open: " + additionalInfo + ". Try running using elevated priviledges";
+            return "Error: You don't have permission to open: " + additionalInfo_t + ". Try running using elevated priviledges";
 
             break;
         
