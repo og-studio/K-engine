@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Settings.h"
 
 namespace ENGINE
@@ -11,6 +12,8 @@ namespace ENGINE
             ~engine();
 
             ENGINE::Settings s;
+
+      
 
     };
 }

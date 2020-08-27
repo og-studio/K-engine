@@ -1,14 +1,13 @@
 #Folders
 .idea/
 .vscode/
-cmake-build-*/
 build/
-
-
+cmake-build-*/
 CMakeFiles/
 
 #Files
-cmake_*
-Kengine
 CMakeCache.*
+cmake_*.*
+Kengine
 Makefile
+

@@ -19,3 +19,20 @@ It's time to track some updates on this.
 
 ### Removed 
     -Removed old ErrorHandler
+
+ 
+ 
+
+## [0.0.2 alpha] - 2020-06-16
+
+### Added
+    +Settings parser
+    +added SDL2
+    
+
+### Changed
+
+    
+
+### Removed 
+    
