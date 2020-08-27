@@ -2,30 +2,18 @@
 #include <SDL2/SDL.h>
 
 #include "Engine.h"
-#include "GUI/SDLUtils.hpp"
-#include "Settings.h"
 
-
-
-void ENGINE::Start()
+namespace ENGINE
 {
-    SDL_Event e;
-    bool isRunning = true;
 
-    Settings settings();
-
-    if(ENGINE::initSDL())
+    engine::engine()
     {
-        std::cout << "starting engine..." << std::endl;
-        while(isRunning && !SDL_PollEvent(&e))
-        {
-            if(e.type == SDL_QUIT)
-            {
-                ENGINE::SDLQuit();
-            }
-        }
-        
+        std::cout << "starting engine..." << std::endl; 
     }
-    
-}
 
+    engine::~engine()
+    {
+
+    }
+
+}

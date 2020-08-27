@@ -1,11 +1,20 @@
 #pragma once
 
-namespace ENGINE 
+#include "Settings.h"
+
+namespace ENGINE
 {
-    //Variables
+    class engine
+    {
 
-    
-    //Functions
-    void Start();
+        public:
+            engine(/* args */);
+            ~engine();
 
+            ENGINE::Settings s;
+
+      
+
+    };
 }
+
