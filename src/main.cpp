@@ -3,6 +3,5 @@
 
 int main()
 {
-    ENGINE::Start();
+    ENGINE::engine e;
 }
-

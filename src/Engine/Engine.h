@@ -1,12 +1,17 @@
 #pragma once
-
-#include <iostream>
-
 #include "Settings.h"
 
-namespace ENGINE {
+namespace ENGINE
+{
+    class engine
+    {
 
+        public:
+            engine(/* args */);
+            ~engine();
 
-    void Start();
+            ENGINE::Settings s;
 
+    };
 }
+

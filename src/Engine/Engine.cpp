@@ -1,12 +1,15 @@
 #include "Engine.h"
+#include <iostream>
 
-void ENGINE::Start()
+namespace ENGINE
 {
+    engine::engine()
+    {
+        std::cout << "starting engine..." << std::endl; 
+    }
 
-    Settings s;
+    engine::~engine()
+    {
 
-    std::cout << "starting engine..." << std::endl;
-
-    
+    }
 }
-
