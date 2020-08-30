@@ -35,4 +35,13 @@ It's time to track some updates on this.
     
 
 ### Removed 
-    
+
+## [0.0.3 alpha] - 2020-08-30
+
+
+### Changed
+
+    -Rewritten Engine.h/cpp (Converted into class to prevent issues)
+
+### Removed 
+    -Removed SDL support (Temporarely)
